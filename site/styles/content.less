@@ -28,6 +28,11 @@ section.nav_list {
 
 		box-sizing: border-box;
 		padding: 50px 1em;
+		transition: all 0.3s;
+
+		&:hover {
+			background-color: lighten(@color_blue, 5%);
+		}
 
 		img {
 			display: block;
@@ -47,5 +52,9 @@ section.nav_list {
 
 	a:nth-of-type(1n+3) {
 		background-color: @color_aqua;
+
+		&:hover {
+			background-color: lighten(@color_aqua, 5%);
+		}
 	}
 }
