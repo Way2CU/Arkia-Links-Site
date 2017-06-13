@@ -16,7 +16,7 @@
 					cms:eval="src"
 					/>
 				<div class="logo">
-					<cms:text constant="hot_deals"/>
+					<h1><cms:text constant="hot_deals"/></h1>
 				</div>
 
 				<!-- Vacation link -->
