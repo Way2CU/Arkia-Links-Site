@@ -15,6 +15,9 @@
 					alt="woman_vacation_beach"
 					cms:eval="src"
 					/>
+				<div class="logo">
+					<cms:text constant="hot_deals"/>
+				</div>
 
 				<!-- Vacation link -->
 				<a
