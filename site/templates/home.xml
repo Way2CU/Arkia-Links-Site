@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE document SYSTEM "../units/schema/language.dtd">
 <document>
-	<cms:var name="_DOCTYPE"/>
 	<html lang="$language" dir="$language_rtl ? 'rtl' : 'ltr'" cms:eval="lang,dir">
 		<head>
 			<title><cms:text constant="site_title"/></title>
@@ -9,7 +8,98 @@
 		</head>
 
 		<body>
-			<h1>חופשה בארץ</h1>
+			<section class="nav_list">
+				<!-- Main image -->
+				<img
+					src="_BASEURL.'/site/images/header2.jpg'"
+					alt="woman_vacation_beach"
+					cms:eval="src"
+					/>
+
+				<!-- Vacation link -->
+				<a
+					href="URL::make(array(), 'vaction_city.xml')"
+					cms:eval="href"
+					>
+					<img
+						src="_BASEURL.'/site/images/vacation.png'"
+						alt="beach_unbrella"
+						cms:eval="src"
+						/>
+					<cms:text constant="vaction_city"/>
+
+					<!-- Arrow png -->
+					<img
+						src="_BASEURL.'/site/images/arrow.png'"
+						alt="arrow"
+						cms:eval="src"
+						class="arrow"
+						/>
+				</a>
+
+				<!-- Eilat link -->
+				<a
+					href="URL::make(array(), 'eilat_vacation.xml')"
+					cms:eval="href"
+					>
+					<img
+						src="_BASEURL.'/site/images/airplane.png'"
+						alt="airplane"
+						cms:eval="src"
+						/>
+					<cms:text constant="eilat_vacation"/>
+
+					<!-- Arrow png -->
+					<img
+						src="_BASEURL.'/site/images/arrow.png'"
+						alt="arrow"
+						cms:eval="src"
+						class="arrow"
+						/>
+				</a>
+
+				<!-- vacation abroad link -->
+				<a
+					href="URL::make(array(), 'vacation_abroad.xml')"
+					cms:eval="href"
+					>
+					<img
+						src="_BASEURL.'/site/images/vacation1.png'"
+						alt="palm tree"
+						cms:eval="src"
+						/>
+					<cms:text constant="vacation_abroad"/>
+
+					<!-- Arrow png -->
+					<img
+						src="_BASEURL.'/site/images/arrow.png'"
+						alt="arrow"
+						cms:eval="src"
+						class="arrow"
+						/>
+				</a>
+
+				<!-- Flights abroad link -->
+				<a
+					href="URL::make(array(), 'flights_abroad.xml')"
+					cms:eval="href"
+					>
+					<img
+						src="_BASEURL.'/site/images/airplane.png'"
+						alt="airplane"
+						cms:eval="src"
+						/>
+					<cms:text constant="flights_abroad"/>
+
+					<!-- Arrow png -->
+					<img
+						src="_BASEURL.'/site/images/arrow.png'"
+						alt="arrow"
+						cms:eval="src"
+						class="arrow"
+						/>
+				</a>
+			</section>
 		</body>
 	</html>
 </document>
