@@ -1,0 +1,51 @@
+/**
+ * Content Style Sheet
+ * Arkia
+ *
+ * Copyright (c) 2017. by Way2CU, http://way2cu.com
+ * Authors: Iliya Melishev
+ */
+
+section.nav_list {
+	width: 600px;
+	margin: 0 auto;
+	text-align: center;
+
+	img {
+		width: 100%;
+	}
+
+	a {
+		display: block;
+		width: 100%;
+		color: white;
+		text-decoration: none;
+		background-color: @color_blue;
+		border-bottom: 2px solid white;
+
+		font-size: 2rem;
+		font-weight: 700;
+
+		box-sizing: border-box;
+		padding: 50px 1em;
+
+		img {
+			display: block;
+			width: 50px;
+			height: 50px;
+			margin: 0 auto;
+			padding-bottom: 10px;
+		}
+
+		img.arrow {
+			width: 25px;
+			height: 25px;
+			float: left;
+			padding-top: 30px;
+		}
+	}
+
+	a:nth-of-type(1n+3) {
+		background-color: @color_aqua;
+	}
+}
