@@ -9,7 +9,7 @@
 		</head>
 
 		<body>
-			<cms:raw file="parts/gtmhead.txt"/>
+			<cms:raw file="parts/gtmbody.txt"/>
 			<section class="nav_list">
 				<!-- Main image -->
 				<img
