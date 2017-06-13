@@ -5,9 +5,11 @@
 		<head>
 			<title><cms:text constant="site_title"/></title>
 			<cms:module name="head_tag" action="print_tag"/>
+			<cms:raw file="parts/gtmhead.txt"/>
 		</head>
 
 		<body>
+			<cms:raw file="parts/gtmhead.txt"/>
 			<section class="nav_list">
 				<!-- Main image -->
 				<img
