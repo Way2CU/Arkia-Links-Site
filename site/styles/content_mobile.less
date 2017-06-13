@@ -17,8 +17,21 @@
 section.nav_list {
 	text-align: center;
 
+	div.logo {
+		text-align: initial;
+		background-image: url(../images/logo.jpg);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: 100% auto;
+		color: white;
+
+		min-height: calc(~'100vw / 8.648');
+
+	}
+
 	img {
 		width: 100%;
+		display: block;
 	}
 
 	a {
@@ -27,7 +40,7 @@ section.nav_list {
 		color: white;
 		text-decoration: none;
 		background-color: @color_blue;
-		border-bottom: 2px solid white;
+		border-bottom: 4px solid white;
 
 		font-size: 2rem;
 		font-weight: 700;
